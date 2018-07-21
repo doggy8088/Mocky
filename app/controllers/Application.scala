@@ -26,7 +26,8 @@ class Application @Inject()(cc: ControllerComponents, dispatcher: RepositoryDisp
     if (isHttps)
       Ok(views.html.index(Mocker.formMocker))
     else
-      Redirect("https://www.mocky.io", 301)
+      // Redirect("https://www.mocky.io", 301)
+      Ok(views.html.index(Mocker.formMocker))
   }
 
   def get(id: String, version: String) = Action.async { implicit request =>
