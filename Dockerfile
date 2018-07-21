@@ -1,7 +1,7 @@
 FROM hseeberger/scala-sbt
 MAINTAINER wangmuy <wangmuy@gmail.com>
 
-COPY sbt.repositories /root/.sbt/repositories
+# COPY sbt.repositories /root/.sbt/repositories
 COPY . /app
 
 WORKDIR /app
