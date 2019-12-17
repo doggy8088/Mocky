@@ -1,4 +1,13 @@
 # Mocky
+
+## Docker Run
+
+```sh
+docker run -d -i -p 9000:9000 wangmuy/mocky
+```
+
+http://localhost:9000/
+
 #### Mock your HTTP responses to test your REST API
 
 Mocky is a simple app which allows to generate custom HTTP responses. <br />
